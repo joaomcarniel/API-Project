@@ -1,0 +1,15 @@
+create database project;
+use project;
+create table Contacts(
+	contactId int NOT NULL,
+    lastName varchar(255) NOT NULL,
+    firstName varchar(255) NOT NULL,
+    contactStatus int NOT NULL,
+    telephone varchar(14) NOT NULL,
+    email varchar(50),
+    creationDate datetime,
+    PRIMARY KEY (contactId)
+);
+ALTER TABLE Contacts
+MODIFY contactId INT NOT NULL AUTO_INCREMENT;
+SELECT * FROM Contacts;
